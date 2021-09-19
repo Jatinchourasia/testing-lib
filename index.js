@@ -8,4 +8,5 @@ function converter(sentence) {
   let converted = capitalized.join(" ");
   return converted;
 }
-export default converter;
+
+module.export = converter;
