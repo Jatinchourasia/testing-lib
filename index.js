@@ -1,3 +1,1 @@
-const converter = require("./src/convertor");
-
-module.export = converter;
+export { converter } from "./src/convertor";
