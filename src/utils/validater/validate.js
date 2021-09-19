@@ -299,7 +299,7 @@ schema.listExclusion = (value, rule) => {
   return { message: rule.message || languages.specifiedliastisnotanarray };
 };
 
-module.exports = function validate(value, rules = []) {
+function validate(value, rules = []) {
   let errors = null;
   // console.log(rules, 'rules');
   for (let i = 0; i < rules.length; i += 1) {
@@ -313,4 +313,6 @@ module.exports = function validate(value, rules = []) {
     }
   }
   return null;
-};
+}
+
+export default validate;
